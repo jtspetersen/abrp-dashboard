@@ -1,0 +1,9 @@
+[server]
+# Cap the file-upload size at 10 MB — ABRP xlsx exports are < 100 KB, so
+# this leaves plenty of headroom for edge cases while blocking zip-bomb
+# style attacks. The app also does a belt-and-suspenders check at 5 MB
+# in app.py before handing to pandas.
+maxUploadSize = 10
+
+[browser]
+gatherUsageStats = false

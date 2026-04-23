@@ -1,0 +1,21 @@
+# See https://pre-commit.com for documentation.
+# Install once per clone with `pre-commit install`, then every `git commit`
+# triggers these hooks automatically.
+
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v5.0.0
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - id: check-yaml
+      - id: check-toml
+      - id: check-added-large-files
+        args: ["--maxkb=2000"]  # grid file is ~1.8 MB, allow up to 2 MB
+
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.8.4
+    hooks:
+      - id: ruff
+        args: ["--fix"]
+      - id: ruff-format

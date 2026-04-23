@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Secrets
+.env
+.streamlit/secrets.toml
+
+# Build / distribution
+build/
+dist/
+*.egg-info/
+*.egg
+
+# Test + type-checker caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Editor / IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS cruft
+.DS_Store
+Thumbs.db
+
+# Elevation-grid partials (from interrupted builds)
+data/us_elevation_grid.partial.npz
+data/us_elevation_grid.partial.npz.tmp.npz
+
+# Claude Code session state (local-only, never publish)
+.claude/
