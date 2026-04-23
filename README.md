@@ -18,7 +18,7 @@ pip install -r requirements.txt
 python -m streamlit run app.py
 ```
 
-Open the link Streamlit prints, then upload an ABRP `.xlsx` export via the sidebar.
+Open the link Streamlit prints, then upload an ABRP `.xlsx` export via the sidebar. (sample trip included in /data)
 
 ## Running the tests
 
